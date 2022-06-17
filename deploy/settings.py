@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-$1_i$-z@!4o#sd$aa(f@a+u&eh&dke9e!u9fjl17g&&2w&(e8s
 # SECURITY WARNING: don't run with debug turned on in prodgituction!
 DEBUG = True
 
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS = ['https://rrs-arindam.herokuapp.com',
 'localhost',
 '127.0.0.1']
 # 'restaurant-review-system-a007.herokuapp.com'
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',g
+    'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
