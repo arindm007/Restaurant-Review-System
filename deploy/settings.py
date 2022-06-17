@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
 import os
 
 
@@ -27,7 +28,9 @@ SECRET_KEY = 'django-insecure-$1_i$-z@!4o#sd$aa(f@a+u&eh&dke9e!u9fjl17g&&2w&(e8s
 # SECURITY WARNING: don't run with debug turned on in prodgituction!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+'localhost',
+'127.0.0.1']
 # 'restaurant-review-system-a007.herokuapp.com'
 
 # Application definition
@@ -38,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',g
 ]
 
 MIDDLEWARE = [
@@ -125,4 +128,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+django_heroku.settings(locals())
 
