@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-$1_i$-z@!4o#sd$aa(f@a+u&eh&dke9e!u9fjl17g&&2w&(e8s
 # SECURITY WARNING: don't run with debug turned on in prodgituction!
 DEBUG = True
 
-ALLOWED_HOSTS = ['restaurant-review-system-a007.herokuapp.com']
-
+ALLOWED_HOSTS = []
+# 'restaurant-review-system-a007.herokuapp.com'
 
 # Application definition
 
