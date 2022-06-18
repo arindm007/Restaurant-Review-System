@@ -21,4 +21,13 @@ def result(request):
 	# print(lis)
 	
 	ans = model.predict(lis)
-	return render(request,"result.html",{'ans':ans})
+	return render(request,"result.html",{'ans':pred(ans)})
+
+def pred(val):
+    res = ''
+    if val == 1:
+        res = 'Positive'
+        return res
+    else:
+     	res = 'Negative'
+     	return res
