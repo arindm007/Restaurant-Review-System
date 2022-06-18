@@ -29,6 +29,7 @@ SECRET_KEY = 'django-insecure-$1_i$-z@!4o#sd$aa(f@a+u&eh&dke9e!u9fjl17g&&2w&(e8s
 DEBUG = False
 
 ALLOWED_HOSTS = ['https://rss-gaurav.herokuapp.com',
+'https://rrs-arindam.herokuapp.com',
 'localhost',
 '127.0.0.1']
 # 'restaurant-review-system-a007.herokuapp.com'
