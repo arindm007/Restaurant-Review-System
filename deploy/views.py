@@ -23,7 +23,7 @@ def result(request):
 	ans = model.predict(lis)
 	return render(request,"result.html",{'ans':pred(ans)})
 
-def pred(val):
+def pred(val): # Program converts 0 nad 1 to positive and negative
     res = ''
     if val == 1:
         res = 'Positive'
